@@ -15,8 +15,34 @@
 <p>git checkout -- index.html</p>
 <h2>ステージ追加を取り消す</h2>
 <p>git reset HEAD index.html</p>
-<h2>commitを修正する。やり直す</h2>
+<p>commitを修正する。やり直す</p>
 <p>pushした後だと、他の人と変更履歴が異なってしまう危険性。
 　　そういったときは、もう一度commitを行う。
 </p>
 <p>git commit --amend</p>
+
+<h2>リモート新規追加</h2>
+<p>git remote add リモート名 リモートURL</p>
+
+<h2>リモートの情報を確認</h2>
+<p>ユーザー：git remote</p>
+<p>詳細・URL：git remote -v</p>
+
+<h2>リモートから取得</h2>
+<p>fetch:git fetch origin master→git merge origin master</p>
+<p>pull(1回でできる。ただ特殊): git pull origin master</p>
+<p>pullは、今いるbranchにマージされる</p>
+
+<h2>リモートの詳細情報を表示</h2>
+<p>git remote show origin</p>
+
+<h2>リモートの変更・削除</h2>
+<p>git remote rename bak bakup</p>
+<p>git remote rm bakup</p>
+
+<h2>ブランチ一覧表示</h2>
+<p>git branch</p>
+<p>リモートリポジトリも表示 git branch -a</p>
+
+<h2>ブランチを切り替える</h2>
+<p>git checkout -b feature</p>
