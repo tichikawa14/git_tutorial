@@ -4,6 +4,7 @@
 <p>git diff　変更差分を確認</p>
 <p>git add,commitする前に、git status,diffし、
     どのファイルの何を変更したかを確認する癖をつける</p>
+<p>コンフリクト</p>
 
 <h2>コマンドにエイリアスをつける(短縮系で使える)</h2>
 <p>git config --global alias.ci commit</p>
@@ -43,7 +44,6 @@
 <h2>ブランチ一覧表示</h2>
 <p>git branch</p>
 <p>リモートリポジトリも表示 git branch -a</p>
-
 <h2>ブランチを切り替える</h2>
 <p>git checkout -b feature</p>
 
@@ -52,3 +52,20 @@
 <p>Auto merge 基本的なmerge。枝分かれしていたものを統合</p>
 
 <p>git merge</p>
+
+<h2>コンフリクト</h2>
+<p>HEADと＝＝＝＝＝を削除</p>
+<ul>
+    <li>複数人で同じファイルを変更しない</li>
+    <li>pullやmergeする前に変更中の状態をなくしておく(commitやstashしておく)</li>
+    <li>pullするときは、pullするブランチと同じブランチ名に移動してからpullする(master→master。マージしてしまう)</li>
+    <li>コンフリクトしても慌てない</li>
+</ul>
+
+<h2>ブランチ名を変更・削除</h2>
+<p>変更：git branch -m new_branch</p>
+<p>削除：git branch -d feature</p>
+<p>強制削除(masterにマージされてなくても削除)：git branch -D feature</p>
+
+<h2>プルリクエスト</h2>
+<p>pull request</p>
