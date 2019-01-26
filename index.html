@@ -131,3 +131,12 @@
 <p>④git commit --amendコマンドで修正</p>
 <p>⑤git rebase --continuewで次のコミットへいく</p>
 <p>⑥pickだとそのままのコミット内容を適用し次へ行く</p>
+
+<h2>rebase -i 削除・変更</h2>
+<p>削除：git rebase -i→commit行削除</p>
+<p>入れ替え：git rebase -i→commit行入れ替え</p>
+
+<h2>コミットをまとめる</h2>
+<p>git rebase -i HEAD~3→pickからsquashに変更
+    そのコミットを直前のコミットと一つにする
+</p>
